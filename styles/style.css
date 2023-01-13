@@ -73,14 +73,16 @@ main {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 16px;
+  font-style: normal;
   color: #888;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   margin-top: 0.3em;
 }
 .form input:focus, .form textarea:focus ,.form select:focus {
   background: white;
-  border: 3px solid rgb(209,242,252);
+  border: 3px solid rgb(250, 203, 102);
 }
+/* rgb(250, 203, 102) 0%,rgb(244, 119, 10) 100%); */
 
 .form label {
   display: block;
@@ -92,11 +94,13 @@ fieldset {
   border: none;
   border-top: 0.1rem solid black;
   margin-top: 1.5rem;
+
 }
+
 .number{
   padding: .2em .5em; 
   border-radius: 50%; 
-  background: #44cd2a;
+  background: rgb(10, 69, 164);
   color: white;
    font-weight: bold; 
    font-size: 1.2em; 
@@ -108,6 +112,15 @@ legend {
   font-size: 1.2rem;
   font-weight: 700;
 }
+table {
+  width: 100%;
+  text-align: left;
+}
+
+td {
+  width: 33%;
+}
+
 input[type='checkbox'], input[type='radio'] {
   display: inline-block;
   width: fit-content;
@@ -119,9 +132,13 @@ input[type='checkbox'] + label, input[type='radio'] + label {
   margin-right: 2rem;
 }
 .form input[type="submit"] {
-  background: #44cd2a;
-  color: #555;
-  cursor: pointer;
-  font-weight: 600;
+  background: rgb(10, 69, 164);
+  color: white;
+
+}
+
+.form input[type="reset"] {
+  color: rgb(244, 119, 10);
+  background-color: white;
 }
 
