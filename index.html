@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+
+<main>
+  <div class="color-blob"></div>
+  <div class="color-blob"></div>
+  <section class="form-container">
+    <div class="form">
+      <h2>Signup</h2>
+      <form action="" method="post">
+        <fieldset>
+        <legend> <span class="number">1</span>Account info</legend>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+          title="Please enter a valid email address"  required>
+          <label for="password" >Password</label>
+          <input type="password" name="password" id="password" required>
+        </fieldset>
+        <fieldset>
+          <legend> <span class="number">2</span>Dev Skills</legend>
+         
+          <label class="standalone">Programming Languages</label>
+          <input type="checkbox" name="html" id="html" value="html">
+          <label for="html">HTML</label>
+          <input type="checkbox" name="css" id="css" value="css">
+          <label for="css">CSS</label>
+          <input type="checkbox" name="js" id="js" value="js">
+          <label for="js">JavaScript</label>
+          <input type="checkbox" name="php" id="php" value="php">
+          <label for="php">PHP</label>
+        </fieldset>
+        <fieldset>
+          <legend> <span class="number">3</span> Experience</legend>
+          <label class="standalone">Overall Experience</label>
+            <input type="radio" name="experience" id="beginner" value="beginner">
+            <label for="beginner">Beginner</label>
+            <input type="radio" name="experience" id="intermediate" value="intermediate">
+            <label for="intermediate">Intermediate</label>
+            <input type="radio" name="experience" id="advanced" value="advanced">
+            <label for="advanced">Advanced</label>
+            </fieldset>
+            <fieldset>
+              <legend> <span class="number">4</span>Other</legend>
+              <label for="referredby">How did you hear about us?</label>
+              <select name="referredby" id="referredby">
+                <option value="">Please Select...</option>
+                <optgroup label="Person">
+                  <option value="friend">Friend</option>
+                  <option value="family">Family</option>
+                  <option value="colleague">Colleague</option>
+                </optgroup>
+                <optgroup label="Media">
+                  <option value="internet">Internet</option>
+                  <option value="radio">Radio</option>
+                  <option value="tv">TV</option>
+                  <option value="newpaper">Newspaper</option>
+                </optgroup>
+                <optgroup label="Other">
+                  <option value="magic">Magic!</option>
+                  <option value="other">Other..</option>
+                </optgroup>
+              </select>
+              <label id="other-label" style="display:none;">Additional details please:</label><br>
+              <textarea id="other-text" style="display:none;"></textarea>
+              <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="40" rows="6"></textarea>
+          
+              </fieldset>
+              <input type="submit" value="Submit">
+              <input type="reset" value="Clear Form" onclick="clearForm()">
+      </form>
+    </div>
+  </section>
+</main>
+<script src="./scripts/script.js"></script>
+  </body>
+</html>

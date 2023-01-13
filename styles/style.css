@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Slab', serif;
+}
+
+body {
+  min-height: 125vh;
+  min-width: 400px;
+  background: linear-gradient(to bottom, rgb(209,242,252) 0%,rgb(83,203,241) 100%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin-bottom: 5rem;
+}
+
+.form-container {
+  position: relative;
+  min-width: 400px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  /* background: rgba(255, 255, 255, 0.2); */
+   background: white; 
+   /* opacity: 0.2;  */
+  border-radius: 1em;
+  box-shadow: 5px 25px 50px rgba(0, 0, 0, 0.736), inset -8px -15px 10px rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 5rem;
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.form h2 {
+  position: relative;
+  color: black;
+  font-size: 2em;
+  font-weight: 600;
+  text-shadow: 1px 2px 4px #888;
+  margin-bottom: 1em;
+}
+
+.form h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 3em;
+  height: 0.1em;
+  background: black;
+  box-shadow: 1px 2px 4px #CCC;
+}
+
+.form input, .form textarea,.form select{
+  width: 100%;
+  background: rgba(104, 102, 102, 0.2);
+  outline: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  color: #888;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-top: 0.3em;
+}
+.form input:focus, .form textarea:focus ,.form select:focus {
+  background: white;
+  border: 1px solid #44cd2a;
+}
+
+.form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 0.6rem;
+}
+
+fieldset {
+  border: none;
+  border-top: 0.1rem solid black;
+  margin-top: 1.5rem;
+}
+.number{
+  padding: .2em .5em; 
+  border-radius: 50%; 
+  background: #44cd2a;
+  color: white;
+   font-weight: bold; 
+   font-size: 1.2em; 
+   margin:10px;
+}
+legend {
+  margin-left: 2rem;
+  padding: .5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+input[type='checkbox'], input[type='radio'] {
+  display: inline-block;
+  width: fit-content;
+}
+
+input[type='checkbox'] + label, input[type='radio'] + label {
+  display: inline-block;
+  width: fit-content;
+  margin-right: 2rem;
+}
+.form input[type="submit"] {
+  background: #44cd2a;
+  color: #555;
+  cursor: pointer;
+  font-weight: 600;
+}
+
