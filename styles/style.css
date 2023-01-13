@@ -45,7 +45,7 @@ main {
 
 .form h2 {
   position: relative;
-  color: black;
+  color: rgb(10, 69, 164);
   font-size: 2em;
   font-weight: 600;
   text-shadow: 1px 2px 4px #888;
@@ -59,7 +59,7 @@ main {
   bottom: -7px;
   width: 3em;
   height: 0.1em;
-  background: black;
+  background: rgb(10, 69, 164);
   box-shadow: 1px 2px 4px #CCC;
 }
 
@@ -82,12 +82,15 @@ main {
   background: white;
   border: 3px solid rgb(250, 203, 102);
 }
-/* rgb(250, 203, 102) 0%,rgb(244, 119, 10) 100%); */
 
 .form label {
   display: block;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 0.6rem;
+}
+h4{
+  margin-top: 0.6rem;
+
 }
 
 fieldset {
@@ -97,15 +100,15 @@ fieldset {
 
 }
 
-.number{
-  padding: .2em .5em; 
+/* .number{
+  padding: 3px 11px; 
   border-radius: 50%; 
   background: rgb(10, 69, 164);
   color: white;
    font-weight: bold; 
-   font-size: 1.2em; 
-   margin:10px;
-}
+   font-size: 15px; 
+   margin-right:10px;
+} */
 legend {
   margin-left: 2rem;
   padding: .5rem;
@@ -141,4 +144,50 @@ input[type='checkbox'] + label, input[type='radio'] + label {
   color: rgb(244, 119, 10);
   background-color: white;
 }
+.form input::placeholder {
+font-size:small ;}
 
+footer {
+  position: fixed;
+  bottom: 0rem;
+  width: 100%;
+  text-align: right;
+  font-size: .8rem;
+  padding: 0.6rem;
+  background: black;
+}
+footer p{
+  text-align: center;
+  font-weight: 600;
+  color: rgb(244, 119, 10);
+}
+legend::before {
+  content: "1";
+  padding: 3px 11px; 
+  border-radius: 50%; 
+  background: rgb(10, 69, 164);
+  color: white;
+   font-weight: bold; 
+   font-size: 15px; 
+   margin-right:10px;
+} 
+legend[id="2"]::before{
+  content: "2";
+}
+legend[id="3"]::before{
+  content: "3";
+}
+legend[id="4"]::before{
+  content: "4";
+}
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

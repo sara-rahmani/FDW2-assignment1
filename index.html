@@ -4,15 +4,11 @@
     <meta charset="UTF-8" />
     <title>Sign Up Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
 
@@ -22,19 +18,23 @@
       <h2>Signup</h2>
       <form action="" method="post">
         <fieldset>
-        <legend> <span class="number">1</span>Account info</legend>
-          <label for="name" class="visually-hidden">Name</label>
-          <input type="text" name="name" id="name" placeholder="Full name..." required>
+        <legend id="1"> 
+          <!-- <span class="number">1</span> -->
+          Account info</legend>
+          <label for="name" class="visually-hidden" >Name</label>
+          <input type="text" name="name" id="name"  title="Please enter your name(required)"  placeholder="Full name..." required>
           <label for="email" class="visually-hidden">Email</label>
           <input type="text" name="email" id="email"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
-          title="Please enter a valid email address" placeholder="Email address..." required>
-          <label for="password" >Password</label>
-          <input type="password" name="password" id="password" placeholder="Password.. min 8 chars" minlength="8" required>
+          title="Please enter a valid email address(required)" placeholder="Email address..." required>
+          <label for="password" class="visually-hidden">Password</label>
+          <input type="password" name="password" id="password" title="Please enter a valid password 8 chars minimum (required)" placeholder="Password.. min 8 chars" minlength="8" required>
         </fieldset>
         <fieldset>
-          <legend> <span class="number">2</span>Dev Skills</legend>
+          <legend id="2"> 
+            <!-- <span class="number">2</span> -->
+            Dev Skills</legend>
 
-          <label class="progLang">Programming Languages</label>
+          <h4>Programming Languages</h4>
           <table>
             <tr>
               <td>
@@ -59,7 +59,7 @@
             <input type="checkbox" name="python" id="python" value="ppythonhp">
           <label for="php">Python</label></td>
          </tr></table>
-          <label class="DevOps">Dev Ops</label>
+          <h4>Dev Ops</h4>
          <table>
         <tr>
           <td>
@@ -75,8 +75,10 @@
     </table>
         </fieldset>
         <fieldset>
-          <legend> <span class="number">3</span> Experience</legend>
-          <label class="standalone">Overall Experience</label>
+          <legend id="3"> 
+            <!-- <span class="number">3</span> -->
+             Experience</legend>
+          <h4>Overall Experience</h4>
             <input type="radio" name="experience" id="beginner" value="beginner">
             <label for="beginner">Beginner</label>
             <input type="radio" name="experience" id="intermediate" value="intermediate">
@@ -85,7 +87,9 @@
             <label for="advanced">Advanced</label>
             </fieldset>
             <fieldset>
-              <legend> <span class="number">4</span>Other</legend>
+              <legend id="4"> 
+                <!-- <span class="number">4</span> -->
+                Other</legend>
               <label for="referredby">How did you hear about us?</label>
               <select name="referredby" id="referredby">
                 <option value="">Please Select...</option>
@@ -116,7 +120,9 @@
       </form>
     </div>
   </section>
+  <footer><p> &copy;SSD 2022 : Sara Rahmani</p></footer>
 </main>
+
 <script src="./scripts/script.js"></script>
   </body>
 </html>
