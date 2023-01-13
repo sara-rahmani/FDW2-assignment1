@@ -22,17 +22,17 @@
         <fieldset>
         <legend> <span class="number">1</span>Account info</legend>
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" required>
+          <input type="text" name="name" id="name" placeholder="Full name..." required>
           <label for="email">Email</label>
           <input type="text" name="email" id="email"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
-          title="Please enter a valid email address"  required>
+          title="Please enter a valid email address" placeholder="Email address..." required>
           <label for="password" >Password</label>
-          <input type="password" name="password" id="password" required>
+          <input type="password" name="password" id="password" placeholder="Password.. min 8 chars" minlength="8" required>
         </fieldset>
         <fieldset>
           <legend> <span class="number">2</span>Dev Skills</legend>
          
-          <label class="standalone">Programming Languages</label>
+          <label class="ProgLang">Programming Languages</label>
           <input type="checkbox" name="html" id="html" value="html">
           <label for="html">HTML</label>
           <input type="checkbox" name="css" id="css" value="css">
@@ -41,6 +41,18 @@
           <label for="js">JavaScript</label>
           <input type="checkbox" name="php" id="php" value="php">
           <label for="php">PHP</label>
+          <input type="checkbox" name="sass" id="sass" value="sass">
+          <label for="php">Sass</label>
+          <input type="checkbox" name="python" id="python" value="ppythonhp">
+          <label for="php">Python</label>
+          <label class="DevOps">Dev Ops</label>
+          <input type="checkbox" name="git" id="git" value="git">
+          <label for="html">Git</label>
+          <input type="checkbox" name="gulp" id="gulp" value="gulp">
+          <label for="css">Gulp</label>
+          <input type="checkbox" name="webpack" id="webpack" value="webpack">
+          <label for="js">Webpack</label>
+          
         </fieldset>
         <fieldset>
           <legend> <span class="number">3</span> Experience</legend>

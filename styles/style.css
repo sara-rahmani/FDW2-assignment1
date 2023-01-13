@@ -79,7 +79,7 @@ main {
 }
 .form input:focus, .form textarea:focus ,.form select:focus {
   background: white;
-  border: 1px solid #44cd2a;
+  border: 3px solid rgb(209,242,252);
 }
 
 .form label {
