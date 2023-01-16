@@ -8,7 +8,7 @@
 body {
   min-height: 125vh;
   min-width: 400px;
-  background: linear-gradient(to bottom, #EC9F05 0%,#FF4E00 100%);
+  background: linear-gradient(to bottom, #F5BC4B 0%,#F93116 100%);
 }
 
 main {
@@ -45,7 +45,7 @@ main {
 
 .form h2 {
   position: relative;
-  color: rgb(10, 69, 164);
+  color: #153D6D;
   font-size: 2em;
   font-weight: 600;
   text-shadow: 1px 2px 4px #888;
@@ -59,13 +59,13 @@ main {
   bottom: -7px;
   width: 3em;
   height: 0.1em;
-  background: rgb(10, 69, 164);
+  background: #153D6D;
   box-shadow: 1px 2px 4px #CCC;
 }
 
 .form input, .form textarea,.form select{
   width: 100%;
-  background: rgba(104, 102, 102, 0.2);
+  background: #E8EEEF;
   outline: none;
   padding: 8px 10px;
   border-radius: 8px;
@@ -75,12 +75,11 @@ main {
   font-size: 16px;
   font-style: normal;
   color: #888;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  margin-top: 0.3em;
+  margin: 0.2em;
 }
 .form input:focus, .form textarea:focus ,.form select:focus {
   background: white;
-  border: 3px solid rgb(250, 203, 102);
+  border: 3px solid F5BC4B;
 }
 
 .form label {
@@ -135,13 +134,13 @@ input[type='checkbox'] + label, input[type='radio'] + label {
   margin-right: 2rem;
 }
 .form input[type="submit"] {
-  background: rgb(10, 69, 164);
+  background: #153D6D;
   color: white;
 
 }
 
 .form input[type="reset"] {
-  color: rgb(244, 119, 10);
+  color: #F93116;
   background-color: white;
 }
 .form input::placeholder {
@@ -159,13 +158,13 @@ footer {
 footer p{
   text-align: center;
   font-weight: 600;
-  color: rgb(244, 119, 10);
+  color: #F93116;
 }
 legend::before {
   content: "1";
   padding: 3px 11px; 
   border-radius: 50%; 
-  background: rgb(10, 69, 164);
+  background: #153D6D;
   color: white;
    font-weight: bold; 
    font-size: 15px; 
