@@ -8,7 +8,7 @@
 body {
   min-height: 125vh;
   min-width: 400px;
-  background: linear-gradient(to bottom, rgb(250, 203, 102) 0%,rgb(244, 119, 10) 100%);
+  background: linear-gradient(to bottom, #EC9F05 0%,#FF4E00 100%);
 }
 
 main {
@@ -181,7 +181,6 @@ legend[id="4"]::before{
   content: "4";
 }
 .visually-hidden {
-  position: absolute !important;
   width: 1px !important;
   height: 1px !important;
   padding: 0 !important;
